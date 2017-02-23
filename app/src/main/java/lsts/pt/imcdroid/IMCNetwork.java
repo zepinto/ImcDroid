@@ -8,14 +8,11 @@ import pt.lsts.imc.net.IMCProtocol;
 /**
  * Created by zp on 23-02-2017.
  */
-@EBean
+@EBean(scope = EBean.Scope.Singleton)
 public class IMCNetwork extends IMCProtocol {
 
     public IMCNetwork() {
         super();
         setAutoConnect(ConnectFilter.VEHICLES_ONLY);
     }
-
-
-
 }
